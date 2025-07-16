@@ -1,0 +1,57 @@
+/* css introdução - portfólio */
+.intro-bg {
+    background: var(--color-b1);
+}
+
+.intro-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3.75rem 0px;
+}
+
+.intro-container p {
+    font: 500 1rem/1.5 var(--font-text);
+    color: var(--color-b4);
+}
+
+.intro-container h1 {
+    font: 500 4rem/1.125 var(--font-title1);
+    color: var(--color-e1);
+    margin-bottom: 2.5rem;
+}
+
+.intro-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.intro-extra ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.intro-extra ul li img {
+    width: 24px;
+    cursor: pointer;
+}
+
+@media(width <=500px) {
+    .intro-container {
+        padding: 3.75rem 1.25rem;
+    }
+}
+
+@media (width <=400px) {
+    .intro-container h1 {
+        font-size: 3rem;
+    }
+
+    .intro-extra {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}

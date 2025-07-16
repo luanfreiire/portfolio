@@ -1,0 +1,86 @@
+/* global - portfolio */
+
+/* resets */
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* variáveis */
+:root {
+    --font-title1: 'Cinzel Decorative', sans-serif;
+    --font-title2: 'Cinzel', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --color-b1: #0e0e0e;
+    --color-b2: #1a1a1a;
+    --color-b3: #595959;
+    --color-b4: #9c9c9c;
+    --color-b5: #b2b2b2;
+    --color-b6: #ccc;
+    --color-b7: #dedede;
+    --color-b8: #f7f7f7;
+    --color-e1: #6bd5d7;
+    --color-e2: #014748;
+    --color-grad1: linear-gradient(#6BD5D7 8%, #40AEAF 77%);
+    --color-grad2: linear-gradient(#014748 25%, #228687 66%);
+}
+
+/* componentes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font: 500 4rem/1 var(--font-title2);
+    color: var(--color-e2);
+    display: flex;
+    align-items: start;
+}
+
+.titulo::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(/public/assets/img/icons/dec.svg) no-repeat;
+}
+
+.titulo-dark {
+    font: 500 4rem/1 var(--font-title2);
+    color: var(--color-e1);
+    display: flex;
+    align-items: start;
+}
+
+.titulo-dark::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(/public/assets/img/icons/dec-dark.svg) no-repeat;
+}
+
+.button-secondary {
+    background: transparent;
+    border: 2px solid var(--color-e1);
+    border-radius: 50px;
+    color: var(--color-e1);
+    font: 500 1rem/1.5 var(--font-text);
+    padding: 8px 16px;
+    cursor: pointer;
+}

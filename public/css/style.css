@@ -1,0 +1,11 @@
+/* imports portfolio */
+
+/* fonts - Cinzel, Cinzel Decorative e Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@400..900&family=Nunito:wght@200..1000&display=swap');
+
+
+/* arquivos css */
+@import url(/src/styles/global/global.css);
+@import url(/src/styles/header.css);
+@import url(/src/styles/intro.css);
+@import url(/src/styles/formacao.css);
