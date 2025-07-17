@@ -100,20 +100,7 @@
     }
 
     .formacao-titulo h2 {
-        display: block;
-        font: 400 2.5rem/1.25 var(--font-title2);
-        color: var(--color-e2);
-        margin-bottom: 2rem;
-        position: relative;
-    }
-
-    .formacao-titulo h2::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        background: url(/public/assets/img/icons/dec.svg) no-repeat;
+        display: flex;
     }
 
     .formacao-container {
