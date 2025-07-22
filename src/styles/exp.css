@@ -1,0 +1,54 @@
+/* css - experiências portfólio */
+.exp-bg {
+    background: var(--color-b7);
+}
+
+.exp-container {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding: 3.75rem 1.25rem 3.75rem 1.25rem;
+}
+
+.exp-titulo h1 {
+    font: 400 6rem/1 var(--font-title1);
+    color: var(--color-e2);
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+}
+
+.exp-titulo h1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(/public/assets/img/icons/dec.svg) no-repeat;
+}
+
+.exp-item h2 {
+    font: 400 2rem/1.3 var(--font-title2);
+    color: var(--color-b1);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.exp-item span {
+    display: flex;
+    justify-content: center;
+    font: 500 1rem/1.5 var(--font-title2);
+    color: var(--color-b3);
+    margin-bottom: 1.25rem;
+}
+
+.exp-item p {
+    font: 400 1rem/1.5 var(--font-text);
+    color: var(--color-b2);
+    max-width: 50ch;
+}
+
+.p-item {
+    border-bottom: 2px solid var(--color-b6);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
