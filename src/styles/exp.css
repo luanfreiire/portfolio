@@ -52,3 +52,28 @@
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
+
+@media(width <=700px) {
+    .exp-container {
+        gap: 4rem;
+    }
+}
+
+@media(width <=600px) {
+    .exp-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .exp-titulo h1 {
+        font-size: 2.5rem;
+    }
+
+    .exp-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .p-item {
+        padding-bottom: 1rem;
+    }
+}
