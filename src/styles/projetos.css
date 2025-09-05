@@ -16,7 +16,7 @@
 .destaque-info {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 2rem 0px;
     border-bottom: 2px solid var(--color-b2);
 }
@@ -32,13 +32,12 @@
 .projetos-info h2::before {
     content: "";
     display: block;
-    width: 4px;
-    height: 20px;
+    width: 20px;
+    height: 4px;
     background: var(--color-grad1);
-    transform: rotate(90deg);
     border-radius: 50px;
     position: absolute;
-    left: -20px;
+    left: -30px;
 }
 
 .projetos-info p {
@@ -59,24 +58,18 @@
     margin-bottom: 2rem;
 }
 
-.btn-git,
-.btn-link {
+.btn-git {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.btn-git::after,
-.btn-link::after {
+.btn-git::after {
     content: '';
     display: block;
     width: 16px;
     height: 16px;
     background: url(/public/assets/img/icons/github.svg) no-repeat;
-}
-
-.btn-link::after {
-    background: url(/public/assets/img/icons/arrow-link.svg) no-repeat;
 }
 
 /* projetos gerais */
@@ -97,4 +90,26 @@
 .projetos-item p {
     max-width: 100ch;
     margin-bottom: 2rem;
+}
+
+/* media queries */
+@media(width <=950px) {
+    .destaque-info {
+        flex-direction: column;
+        align-items: initial;
+        gap: 1rem;
+    }
+}
+
+@media(width <=850px) {
+    .projetos-item {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media(width <=600px) {
+    .projetos-titulo {
+        margin-bottom: 2rem;
+    }
 }

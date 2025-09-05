@@ -26,9 +26,10 @@ img {
     display: block;
 }
 
-img[src$=".jpg"] {
+img[src$=".jpg"],
+img[src$=".png"] {
     border-radius: 8px;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 /* variáveis */
@@ -103,7 +104,6 @@ img[src$=".jpg"] {
     .titulo-dark {
         font-size: 2.5rem;
         line-height: 1.25;
-        margin-bottom: 2rem;
     }
 
     .titulo-dakr::after {
@@ -125,6 +125,13 @@ img[src$=".jpg"] {
     gap: 4px;
 }
 
+@media(width <=400px) {
+    .button-primary {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
 .button-secondary {
     background: transparent;
     border: 2px solid var(--color-e1);
@@ -133,4 +140,11 @@ img[src$=".jpg"] {
     font: 500 1rem/1.5 var(--font-text);
     padding: 8px 16px;
     cursor: pointer;
+}
+
+@media(width <=400px) {
+    .button-secondary {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
 }
