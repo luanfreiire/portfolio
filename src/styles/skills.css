@@ -41,3 +41,31 @@
     color: var(--color-b5);
     font-size: 0.875rem;
 }
+
+@media(width <=1000px) {
+    .skills-content {
+        gap: 4rem;
+    }
+}
+
+@media(width <=780px) {
+    .skills-content {
+        flex-direction: column;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
+
+    .skills-item {
+        padding: 0px 4rem;
+    }
+}
+
+@media(width <=780px) {
+    .skills-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-item {
+        padding: 0px 2rem;
+    }
+}
