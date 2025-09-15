@@ -51,16 +51,14 @@
     margin-top: 1rem;
 }
 
-.contato-lista {
-    margin-top: 1.5rem;
-}
-
 .contato-lista li a {
+    display: block;
     font: 700 1rem/1.5 var(--font-text);
     color: var(--color-b7);
 }
 
-.contato-lista li+li {
+.contato-lista li+li,
+.contato-lista {
     margin-top: 1.5rem;
 }
 
@@ -68,4 +66,19 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+/* media queries */
+@media(width <=700px) {
+    .contato h1 {
+        margin-bottom: 2rem;
+    }
+
+    .contato-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-lista {
+        margin-top: 0px;
+    }
 }
