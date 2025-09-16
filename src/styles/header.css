@@ -6,6 +6,8 @@
 .header {
     padding: 2.5rem 1.25rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -56,40 +58,77 @@
     background: url(/public/assets/img/icons/hello-icon.svg) no-repeat;
 }
 
-/* menu mobile OBS: mudar layout e estilo */
-.menu-mobile {
+/* menu mobile */
+.btn-mobile {
     display: none;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    position: relative;
 }
 
-.mobile-bg {
+.mobile-faide {
+    display: none;
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-    z-index: 10;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+.mobile-faide.active {
+    animation: circle-in-center 1s;
 }
 
 .mobile-lista {
-    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.mobile-lista li {
-    border-bottom: 2px solid rgba(100, 100, 100, 0.8);
-    padding: 40px;
-    font: 500 1.5rem var(--font-text);
+.mobile-lista ul {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-lista a {
+    display: block;
+    font: 700 1.5rem/1.5 var(--font-text);
     color: var(--color-b8);
+    letter-spacing: 2px;
+    padding: 10px;
     text-transform: uppercase;
 }
 
-.mobile-lista li:last-child {
-    border-bottom: none;
-}
-
 .mobile-lista li:hover {
-    background: rgba(100, 100, 100, 0.8);
+    background: rgba(100, 100, 100, 0.5);
 }
 
-/* media queries header */
+.mobile-lista li+li {
+    margin-top: 2rem;
+}
+
+/* classe para ativar elementos */
+.active {
+    display: block;
+}
+
+/* animações */
+@keyframes circle-in-center {
+    from {
+        clip-path: circle(0%);
+    }
+
+    to {
+        clip-path: circle(125%);
+    }
+}
+
+[transition-style="in:circle:center"] {
+    animation: cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+}
+
+/* media queries */
 @media(width <=800px) {
     .header-menu {
         gap: 1.5rem;
@@ -104,36 +143,18 @@
     }
 }
 
-/* menu mobile */
-@media(width <=650px) {
-
-    .header-menu,
-    .btn-contato {
+@media (width <=600px) {
+    .header a[href^="mailto"] {
         display: none;
     }
+}
 
-    .menu-mobile {
+@media (width <=400px) {
+    .header-menu {
         display: none;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .mobile-contato {
-        padding: 6px 12px;
-        background: var(--color-grad1);
-        border: solid 2px #228687;
-        border-radius: 50px;
-        font: 700 14px/1.3 var(--font-text);
-        color: var(--color-e2);
-        cursor: pointer;
     }
 
     .btn-mobile {
-        display: block;
-        width: 24px;
-        height: 24px;
-        background: url(/public/assets/img/icons/btn-mobile.svg);
-        border: none;
-        cursor: pointer;
+        display: flex;
     }
 }
