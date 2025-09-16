@@ -57,6 +57,10 @@
     color: var(--color-b7);
 }
 
+.contato-lista li a:hover {
+    color: var(--color-b8);
+}
+
 .contato-lista li+li,
 .contato-lista {
     margin-top: 1.5rem;
