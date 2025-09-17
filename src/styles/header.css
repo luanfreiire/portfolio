@@ -37,27 +37,6 @@
     width: 100%;
 }
 
-.btn-contato {
-    padding: 12px 24px;
-    background: var(--color-grad1);
-    border: solid 2px #228687;
-    border-radius: 50px;
-    font: 700 14px/1.3 var(--font-text);
-    color: var(--color-e2);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.btn-contato::after {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url(/public/assets/img/icons/hello-icon.svg) no-repeat;
-}
-
 /* menu mobile */
 .btn-mobile {
     display: none;
