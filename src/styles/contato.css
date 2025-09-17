@@ -49,6 +49,7 @@
 
 .contato-form button {
     margin-top: 1rem;
+    text-transform: uppercase;
 }
 
 .contato-lista li a {

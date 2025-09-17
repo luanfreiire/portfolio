@@ -65,7 +65,7 @@ img[src$=".png"] {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url(/public/assets/img/icons/dec.svg) no-repeat;
+    background: url(./assets/img/icons/dec.svg) no-repeat;
 }
 
 @media (width <=700px) {
@@ -93,7 +93,7 @@ img[src$=".png"] {
     content: "";
     width: 24px;
     height: 24px;
-    background: url(/public/assets/img/icons/dec-dark.svg) no-repeat;
+    background: url(./assets/img/icons/dec-dark.svg) no-repeat;
 }
 
 @media (width <=700px) {
