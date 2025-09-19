@@ -1,0 +1,2 @@
+const e=document.querySelector('[data-mobile="btn-mobile"]'),t=document.querySelector('[data-mobile="faide-mobile"]');function c(e){e.preventDefault();let t=e.currentTarget.getAttribute("href");document.querySelector(t).scrollIntoView({behavior:"smooth",block:"start"})}e.addEventListener("click",function(){t.classList.add("active")}),t.addEventListener("click",function(){t.classList.remove("active")}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",c)});
+//# sourceMappingURL=public.5de5446e.js.map
